@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body>
+    <h1 class="text-5xl bg text-center mt-10">This is my baap ka Bank</h1>
+    <!-- <button class="border-spacing-0 mr-auto">click me</button> -->
+     <main>
+        <section class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-3">
+                <div class="bg-yellow-300 p-8 rounded-xl my-8 mx-4">
+                    <h1 class="text-2xl">Deposit</h1>
+                    <h2 class="text-5xl">$<span id="dipo-Current">20</span></h2>
+                </div>
+                <div class="bg-purple-400 p-8 rounded-xl my-8 mx-4">
+                    <h1 class="text-2xl">Withdraw</h1>
+                    <h2 class="text-5xl">$<span id="withdraw">00</span></h2>
+                </div>
+                <div class="bg-blue-400 p-8 rounded-xl my-8 mx-4">
+                    <h1 class="text-2xl">Balance</h1>
+                    <h2 class="text-5xl">$<span id="bal-current">100</span> </h2>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2">
+                <div class="bg-green-400 p-8 rounded-xl my-8 mx-4 grid grid-cols-1">
+                    <h1 class="text-2xl">Deposit</h1>
+                    <input class="  my-4 " type="text" name="" id="depo-field" placeholder="Enter Amount">
+                    <button id="btn-diposit" class="w-32 bg-purple-300 rounded mb-4 p-2 font-semibold hover:bg-slate-400" type="submit">Deposit</button>
+                   
+                </div>
+                <div class="bg-red-400 p-8 rounded-xl my-8 mx-4 grid grid-cols-1">
+                    <h1 class="text-2xl">Withdraw</h1>
+                    <input class="  my-4 " type="text" name="" id="with-field" placeholder="Enter Amount">
+                    <button id="btn-withdraw" class="w-32 bg-purple-300 rounded mb-4 p-2 font-semibold hover:bg-slate-400" type="submit">Withdraw</button>
+                </div>
+            </div>
+
+        </section>
+     </main>
+     <script src="./deposit.js"></script>
+    
+    
+</body>
+</html>
